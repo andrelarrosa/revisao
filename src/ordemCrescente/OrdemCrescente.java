@@ -6,11 +6,11 @@ public class OrdemCrescente {
 
 	public static void main(String[] args) {
 		String valores = JOptionPane.showInputDialog("Informe 03 valores separados somente por vírgula");
-		valores = OrdemCrescente(valores);
+		valores = ordemCrescente(valores);
 		JOptionPane.showMessageDialog(null, valores);
 	}
 	
-	public static String OrdemCrescente(String valor) {
+	public static String ordemCrescente(String valor) {
 		String valores[] = valor.split(",");
 		int valoresConvertidos[] = new int[valores.length];
 		for(int i = 0; i < valores.length; i++) {
